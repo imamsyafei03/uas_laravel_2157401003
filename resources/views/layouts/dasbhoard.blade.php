@@ -29,7 +29,13 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
 
+                        </li>
+
+
+                    </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
@@ -70,9 +76,56 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Menu
+                        </div>
+
+                          <div class="card-body">
+                                  <ul class="list-group">
+                                    <li class="list-group-item">
+                                    <a class="nav-link" href="{{route('mahasiswa.index')}}">Mahasiswa</a>
+
+                                  </li>
+
+                                  <li class="list-group-item">
+                                    <a class="nav-link" href="{{route('user.index')}}">User</a>
+
+                                  </li>
+
+
+
+                                 </ul>
+
+
+
+                            </div>
+
+
+
+
+                    </div>
+
+
+                    </div>
+                    <div class="col-md-8">
+                        @yield('content')
+                     </div>
+                </div>
+             </div>
+
+
+
+
+
+
+        </div>
+
+
+
     </div>
 </body>
 </html>
